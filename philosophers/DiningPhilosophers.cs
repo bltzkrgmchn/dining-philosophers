@@ -9,12 +9,12 @@
 
     internal class Philosopher
     {
-        public Philosopher(int number, Chopstick leftChopstick, Chopstick rightChopstic)
+        public Philosopher(int number, Chopstick leftChopstick, Chopstick rightChopstick)
         {
             Number = number;
             Food = Configuration.FoodCount;
             LeftChopstick = leftChopstick;
-            RightChopstick = rightChopstic;
+            RightChopstick = rightChopstick;
             Log = new List<string> { $"{DateTime.Now}: Философ {number} сел за стол." };
         }
 
@@ -149,7 +149,6 @@
                     Console.WriteLine(record);
                 }
                 Console.WriteLine($"======================================================");
-                Console.WriteLine(value.Log.Last());
             }
             foreach ((var key, var value) in Philosophers)
             {
